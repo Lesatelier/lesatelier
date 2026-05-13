@@ -24,7 +24,7 @@ export async function generateLesson(formData: LesFormData): Promise<LessonJSON>
 - Thema: ${formData.thema}
 - Lesduur: ${formData.lesduur}
 - Werkvorm: ${formData.werkvorm}
-- Leerlingautonomie: ${formData.leerlingautonomie}
+- Leerlingautonomie: ${formData.autonomie}
 ${formData.aiAnalyse ? '- Voeg een AI-analyseonderdeel toe waarbij leerlingen AI-gegenereerde teksten kritisch beoordelen.' : ''}
 ${formData.bijzonderheden ? `- Bijzonderheden: ${formData.bijzonderheden}` : ''}
 
