@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LesHub.nl — Kant-en-klare lespakketten Nederlands voor docenten in het voortgezet onderwijs en MBO. Themagebonden lessen voor lezen, schrijven en luisteren.">
+  <title>LesHub.nl — Lespakketten voor docenten Nederlands</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%23C2410C'/><text x='16' y='22' font-size='16' font-family='Georgia,serif' font-weight='bold' fill='white' text-anchor='middle'>L</text></svg>">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════ -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-dot"></span>
+      LesHub
+    </a>
+    <ul class="nav-links">
+      <li><a href="pakketten.html" data-i18n="nav.pakketten">Pakketten</a></li>
+      <li><a href="prijzen.html" data-i18n="nav.prijzen">Prijzen</a></li>
+      <li><a href="workshops.html" data-i18n="nav.workshops">Workshops</a></li>
+      <li><a href="over-mij.html" data-i18n="nav.overons">Over mij</a></li>
+    </ul>
+    <div class="nav-actions">
+      <select class="lang-select" aria-label="Taal kiezen">
+        <option value="nl">🇳🇱 NL</option>
+        <option value="en">🇬🇧 EN</option>
+        <option value="de">🇩🇪 DE</option>
+        <option value="fr">🇫🇷 FR</option>
+        <option value="es">🇪🇸 ES</option>
+      </select>
+      <a href="login.html" class="btn btn-outline btn-sm" data-i18n="nav.inloggen">Inloggen</a>
+      <a href="registratie.html" class="btn btn-primary btn-sm" data-i18n="nav.gratis_proberen">Gratis proberen</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Menu openen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu">
+  <div class="mobile-menu-header">
+    <a href="index.html" class="nav-logo"><span class="logo-dot"></span>LesHub</a>
+    <button class="mobile-menu-close" aria-label="Menu sluiten" style="font-size:1.5rem;color:#44403C">✕</button>
+  </div>
+  <nav class="mobile-menu-links">
+    <a href="pakketten.html">Pakketten</a>
+    <a href="prijzen.html">Prijzen</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="over-mij.html">Over mij</a>
+  </nav>
+  <div class="mobile-menu-footer">
+    <a href="login.html" class="btn btn-outline">Inloggen</a>
+    <a href="registratie.html" class="btn btn-primary">Gratis proberen</a>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <span class="section-label" data-i18n="hero.tagline">Voor docenten Nederlands</span>
+      <h1>Kant-en-klare lespakketten voor het <span>voortgezet onderwijs</span></h1>
+      <p>Professionele, themagebonden lespakketten voor lezen, schrijven en luisteren. Direct inzetbaar in de klas — bespaar urenlange voorbereiding.</p>
+      <div class="hero-actions">
+        <a href="pakketten.html" class="btn btn-primary btn-lg">Bekijk pakketten →</a>
+        <a href="prijzen.html" class="btn btn-outline btn-lg">Meer informatie</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong>18+</strong>
+          <span>Pakketten</span>
+        </div>
+        <div class="hero-stat">
+          <strong>500+</strong>
+          <span>Docenten</span>
+        </div>
+        <div class="hero-stat">
+          <strong>4</strong>
+          <span>Niveaus</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-card-stack">
+        <div class="hero-card">
+          <span class="card-badge">VWO · Jaar 1</span>
+          <h4>Nepnieuws en desinformatie</h4>
+          <p>Media & Maatschappij</p>
+          <div class="card-lessons">
+            <span class="lesson-chip">📖 Lezen</span>
+            <span class="lesson-chip">✏️ Schrijven</span>
+            <span class="lesson-chip">🎧 Luisteren</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <span class="card-badge">HAVO · Jaar 1</span>
+          <h4>Plasticsoep</h4>
+          <p>Natuur & Duurzaamheid</p>
+          <div class="card-lessons">
+            <span class="lesson-chip">📖 Lezen</span>
+            <span class="lesson-chip">✏️ Schrijven</span>
+            <span class="lesson-chip">🎧 Luisteren</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <span class="card-badge">HAVO · Jaar 4</span>
+          <h4>De Romantiek</h4>
+          <p>Literatuur & Cultuur</p>
+          <div class="card-lessons">
+            <span class="lesson-chip">📖 Lezen</span>
+            <span class="lesson-chip">✏️ Schrijven</span>
+            <span class="lesson-chip">🎧 Luisteren</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     ZOEKBALK
+══════════════════════════════════════════ -->
+<div class="search-section">
+  <div class="container">
+    <form class="search-form" id="hero-search-form">
+      <div class="search-group" style="flex:1">
+        <label for="search-query">Zoek een pakket</label>
+        <input
+          type="text"
+          id="search-query"
+          name="query"
+          class="search-input search-input-main"
+          placeholder="Bijv. nepnieuws, romantiek, duurzaamheid…"
+        >
+      </div>
+      <div class="search-group">
+        <label for="search-niveau">Niveau</label>
+        <select id="search-niveau" name="niveau" class="search-input search-select">
+          <option value="">Alle niveaus</option>
+          <option>VMBO</option>
+          <option>HAVO</option>
+          <option>VWO</option>
+          <option>MBO</option>
+        </select>
+      </div>
+      <div class="search-group">
+        <label for="search-leerjaar">Leerjaar</label>
+        <select id="search-leerjaar" name="leerjaar" class="search-input search-select">
+          <option value="">Alle leerjaren</option>
+          <option value="1">Jaar 1</option>
+          <option value="2">Jaar 2</option>
+          <option value="3">Jaar 3</option>
+          <option value="4">Jaar 4</option>
+          <option value="5">Jaar 5</option>
+          <option value="6">Jaar 6</option>
+        </select>
+      </div>
+      <div class="search-group" style="justify-content:flex-end">
+        <label>&nbsp;</label>
+        <button type="submit" class="btn btn-primary" style="height:44px">Zoeken</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     HOE WERKT HET?
+══════════════════════════════════════════ -->
+<section style="padding:4rem 0;background:var(--white)">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Werkwijze</span>
+      <h2>In drie stappen de klas in</h2>
+      <p>Van aankoop tot uitvoering in minder dan vijf minuten.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem;max-width:900px;margin:0 auto">
+      <div style="text-align:center;padding:1.5rem">
+        <div style="font-size:2.5rem;margin-bottom:1rem">🔍</div>
+        <h3 style="font-size:1.1rem;margin-bottom:.5rem">1. Kies een pakket</h3>
+        <p style="font-size:.9rem;color:#57534E">Filter op niveau, leerjaar en thema dat bij jouw klas past.</p>
+      </div>
+      <div style="text-align:center;padding:1.5rem">
+        <div style="font-size:2.5rem;margin-bottom:1rem">💳</div>
+        <h3 style="font-size:1.1rem;margin-bottom:.5rem">2. Betaal eenvoudig</h3>
+        <p style="font-size:.9rem;color:#57534E">iDEAL, creditcard of PayPal — veilig en direct beschikbaar.</p>
+      </div>
+      <div style="text-align:center;padding:1.5rem">
+        <div style="font-size:2.5rem;margin-bottom:1rem">📥</div>
+        <h3 style="font-size:1.1rem;margin-bottom:.5rem">3. Download & gebruik</h3>
+        <p style="font-size:.9rem;color:#57534E">PDF en Word-versie direct in je inbox. Print of gebruik digitaal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     THEMAPAKKETTEN
+══════════════════════════════════════════ -->
+<section class="pakketten-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Pakketten</span>
+      <h2>Themapakketten</h2>
+      <p>Zorgvuldig samengesteld per thema, niveau en leerjaar. Elke pakket bevat drie complete lessen.</p>
+    </div>
+    <div class="pakketten-grid" id="home-pakketten-grid">
+      <!-- Dynamisch gevuld via JS -->
+    </div>
+    <div class="text-center mt-4">
+      <a href="pakketten.html" class="btn btn-outline btn-lg">Alle pakketten bekijken →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     REVIEWS
+══════════════════════════════════════════ -->
+<section class="reviews-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Ervaringen</span>
+      <h2>Wat docenten zeggen</h2>
+      <p>Meer dan 500 docenten gingen je al voor. Dit is wat zij vinden.</p>
+    </div>
+    <div class="reviews-grid" id="reviews-grid">
+      <!-- Dynamisch gevuld via JS -->
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     PRIJZEN PREVIEW
+══════════════════════════════════════════ -->
+<section class="prijzen-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Transparante prijzen</span>
+      <h2>Kies wat bij jou past</h2>
+      <p>Los pakket of voordelig abonnement — geen verrassingen achteraf.</p>
+    </div>
+    <div class="prijzen-grid">
+
+      <!-- Los pakket -->
+      <div class="prijs-card">
+        <div class="prijs-naam">Los pakket</div>
+        <div class="prijs-bedrag"><sup>€</sup>9,99</div>
+        <div class="prijs-periode">per les</div>
+        <ul class="prijs-features">
+          <li class="prijs-feature">1 les naar keuze</li>
+          <li class="prijs-feature">PDF + Word-versie</li>
+          <li class="prijs-feature">Docentenhandleiding</li>
+          <li class="prijs-feature muted">Onbeperkt toegang</li>
+          <li class="prijs-feature muted">Maandelijkse nieuwe pakketten</li>
+        </ul>
+        <a href="pakketten.html" class="btn btn-outline btn-koop-prijs" style="width:100%;justify-content:center">Kies een pakket</a>
+      </div>
+
+      <!-- Maandabonnement -->
+      <div class="prijs-card featured">
+        <div class="prijs-badge">Meest gekozen</div>
+        <div class="prijs-naam">Maandabonnement</div>
+        <div class="prijs-bedrag"><sup>€</sup>14,99</div>
+        <div class="prijs-periode">per maand, opzegbaar</div>
+        <ul class="prijs-features">
+          <li class="prijs-feature">Toegang tot alle pakketten</li>
+          <li class="prijs-feature">PDF + Word-versie</li>
+          <li class="prijs-feature">Docentenhandleiding</li>
+          <li class="prijs-feature">Onbeperkt downloaden</li>
+          <li class="prijs-feature muted">Maandelijkse nieuwe pakketten</li>
+        </ul>
+        <button class="btn btn-primary btn-koop-prijs" style="width:100%;justify-content:center">Aan de slag</button>
+      </div>
+
+      <!-- Jaarabonnement -->
+      <div class="prijs-card">
+        <div class="prijs-naam">Jaarabonnement</div>
+        <div class="prijs-bedrag"><sup>€</sup>129,99</div>
+        <div class="prijs-periode">per jaar — bespaar 28%</div>
+        <ul class="prijs-features">
+          <li class="prijs-feature">Alles uit Maandabonnement</li>
+          <li class="prijs-feature">Nieuwe pakketten elke maand</li>
+          <li class="prijs-feature">Prioriteit klantenservice</li>
+          <li class="prijs-feature">Early access nieuwe thema's</li>
+          <li class="prijs-feature">Factuur voor school/werkgever</li>
+        </ul>
+        <button class="btn btn-outline btn-koop-prijs" style="width:100%;justify-content:center">Aan de slag</button>
+      </div>
+    </div>
+    <p class="text-center mt-3" style="font-size:.85rem;color:#78716C">Alle bedragen zijn inclusief btw. <a href="prijzen.html" style="color:var(--primary)">Bekijk volledige vergelijking →</a></p>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     WORKSHOPS
+══════════════════════════════════════════ -->
+<section class="workshops-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Workshops & Trainingen</span>
+      <h2 style="color:var(--white)">Samen werken aan taalonderwijs</h2>
+      <p style="color:rgba(255,255,255,.7)">Maatwerk voor secties, scholen én bedrijven die taalvaardigheid centraal stellen.</p>
+    </div>
+    <div class="workshops-grid" style="max-width:800px;margin:0 auto;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+      <div class="workshop-card">
+        <div class="workshop-icon">🤖</div>
+        <h3>AI-geletterdheid voor docenten</h3>
+        <p>Een praktische introductie in het gebruik van AI in het onderwijs — toegankelijk voor docenten zonder technische voorkennis.</p>
+        <div class="workshop-tags">
+          <span class="workshop-tag">Introductie</span>
+          <span class="workshop-tag">Op locatie of online</span>
+        </div>
+      </div>
+      <div class="workshop-card">
+        <div class="workshop-icon">🚀</div>
+        <h3>AI voor gevorderden</h3>
+        <p>Voor docenten die al bekend zijn met AI en meer willen leren over geavanceerde toepassingen in het onderwijs.</p>
+        <div class="workshop-tags">
+          <span class="workshop-tag">Verdieping</span>
+          <span class="workshop-tag">Op locatie of online</span>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="workshops.html" class="btn btn-ghost btn-lg">Meer over workshops →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     CTA BANNER
+══════════════════════════════════════════ -->
+<section style="padding:4rem 0;background:var(--primary)">
+  <div class="container text-center">
+    <h2 style="color:var(--white);margin-bottom:.75rem">Klaar om te beginnen?</h2>
+    <p style="color:rgba(255,255,255,.85);font-size:1.05rem;margin-bottom:2rem;max-width:500px;margin-left:auto;margin-right:auto">Meld je gratis aan en bekijk welk pakket het beste bij jouw klas past.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="registratie.html" class="btn btn-ghost btn-lg">Maak gratis account →</a>
+      <a href="pakketten.html" class="btn" style="background:var(--white);color:var(--primary);padding:.9rem 2rem;font-size:1.05rem;border-radius:10px;font-weight:600">Bekijk pakketten</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><span class="logo-dot"></span>LesHub</a>
+        <p>Kwalitatieve, kant-en-klare lespakketten Nederlands voor docenten in het voortgezet onderwijs en MBO.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="pakketten.html">Pakketten</a></li>
+          <li><a href="prijzen.html">Prijzen</a></li>
+          <li><a href="workshops.html">Workshops</a></li>
+          <li><a href="registratie.html">Gratis proberen</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Ondersteuning</h4>
+        <ul>
+          <li><a href="#">Veelgestelde vragen</a></li>
+          <li><a href="workshops.html#contact">Contact</a></li>
+          <li><a href="#">Handleiding</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Meer</h4>
+        <ul>
+          <li><a href="over-mij.html">Over mij</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 LesHub.nl — Alle rechten voorbehouden</span>
+      <div style="display:flex;gap:1.25rem;flex-wrap:wrap;justify-content:center">
+        <a href="#">Privacybeleid</a>
+        <a href="#">Algemene voorwaarden</a>
+        <a href="#">Cookiebeleid</a>
+      </div>
+      <div class="payment-icons">
+        <span class="payment-icon">iDEAL</span>
+        <span class="payment-icon">PayPal</span>
+        <span class="payment-icon">VISA</span>
+        <span class="payment-icon">MC</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>

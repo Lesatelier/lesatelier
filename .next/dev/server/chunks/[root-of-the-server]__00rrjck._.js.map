@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///C:/Leshub/app/api/debug/route.ts"],"sourcesContent":["import { NextResponse } from 'next/server';\n\nexport async function GET() {\n  return NextResponse.json({\n    hasKey: !!process.env.ANTHROPIC_API_KEY,\n    keyPrefix: process.env.ANTHROPIC_API_KEY?.slice(0, 20) ?? 'NOT SET',\n  });\n}\n"],"names":["GET","json","hasKey","process","env","ANTHROPIC_API_KEY","keyPrefix","slice"],"mappings":";;;;AAAA;;AAEO,eAAeA;IACpB,OAAO,gJAAY,CAACC,IAAI,CAAC;QACvBC,QAAQ,CAAC,CAACC,QAAQC,GAAG,CAACC,iBAAiB;QACvCC,WAAWH,QAAQC,GAAG,CAACC,iBAAiB,EAAEE,MAAM,GAAG,OAAO;IAC5D;AACF"}}]
+}

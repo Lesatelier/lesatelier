@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pakketdetails — LesHub.nl">
+  <title>Pakketdetail — LesHub.nl</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%23C2410C'/><text x='16' y='22' font-size='16' font-family='Georgia,serif' font-weight='bold' fill='white' text-anchor='middle'>L</text></svg>">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo"><span class="logo-dot"></span>LesHub</a>
+    <ul class="nav-links">
+      <li><a href="pakketten.html" data-i18n="nav.pakketten">Pakketten</a></li>
+      <li><a href="prijzen.html" data-i18n="nav.prijzen">Prijzen</a></li>
+      <li><a href="workshops.html" data-i18n="nav.workshops">Workshops</a></li>
+      <li><a href="over-mij.html" data-i18n="nav.overons">Over mij</a></li>
+    </ul>
+    <div class="nav-actions">
+      <select class="lang-select" aria-label="Taal kiezen">
+        <option value="nl">🇳🇱 NL</option>
+        <option value="en">🇬🇧 EN</option>
+        <option value="de">🇩🇪 DE</option>
+        <option value="fr">🇫🇷 FR</option>
+        <option value="es">🇪🇸 ES</option>
+      </select>
+      <a href="login.html" class="btn btn-outline btn-sm">Inloggen</a>
+      <a href="registratie.html" class="btn btn-primary btn-sm">Gratis proberen</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Menu openen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu">
+  <div class="mobile-menu-header">
+    <a href="index.html" class="nav-logo"><span class="logo-dot"></span>LesHub</a>
+    <button class="mobile-menu-close" style="font-size:1.5rem;color:#44403C">✕</button>
+  </div>
+  <nav class="mobile-menu-links">
+    <a href="pakketten.html">Pakketten</a>
+    <a href="prijzen.html">Prijzen</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="over-mij.html">Over mij</a>
+  </nav>
+  <div class="mobile-menu-footer">
+    <a href="login.html" class="btn btn-outline">Inloggen</a>
+    <a href="registratie.html" class="btn btn-primary">Gratis proberen</a>
+  </div>
+</div>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Broodkruimel">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="pakketten.html">Pakketten</a>
+      <span class="breadcrumb-sep">›</span>
+      <span id="detail-breadcrumb-titel">Pakket</span>
+    </nav>
+    <div id="detail-meta" style="display:flex;gap:.5rem;margin-bottom:.75rem;flex-wrap:wrap"></div>
+    <h1 id="detail-titel">Laden…</h1>
+    <p id="detail-beschrijving" style="max-width:580px;margin-top:.5rem"></p>
+  </div>
+</div>
+
+<!-- DETAIL BODY -->
+<div style="background:var(--neutral-50);padding-bottom:5rem">
+  <div class="container">
+    <div class="detail-layout">
+
+      <!-- MAIN -->
+      <div class="detail-main">
+
+        <!-- Preview -->
+        <div class="detail-preview">
+          <div style="text-align:center">
+            <div style="font-size:3rem;margin-bottom:.5rem">👁️</div>
+            <p style="font-size:.9rem;color:#78716C">Preview beschikbaar na aankoop</p>
+          </div>
+          <div class="preview-overlay">
+            <button class="btn btn-ghost btn-sm btn-koop" style="pointer-events:auto">🔓 Ontgrendel preview</button>
+          </div>
+        </div>
+
+        <!-- Lessen -->
+        <div class="detail-lessons">
+          <h2 style="margin-bottom:1.25rem;font-size:1.4rem">Drie lessen in dit pakket</h2>
+          <div id="detail-lessen">
+            <!-- Dynamisch via JS -->
+          </div>
+        </div>
+
+        <!-- Inbegrepen -->
+        <div class="detail-included">
+          <h3>Wat zit er in het pakket?</h3>
+          <div class="included-list mt-2" id="detail-inclusieven">
+            <!-- Dynamisch via JS -->
+          </div>
+        </div>
+
+        <!-- Geschikt voor -->
+        <div style="margin-top:2.5rem;padding:1.5rem;background:var(--warm-50);border-radius:var(--radius-lg);border:1px solid var(--warm-200)">
+          <h3 style="font-size:1.1rem;margin-bottom:.75rem">Geschikt voor</h3>
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap" id="detail-geschikt">
+            <!-- Dynamisch via JS -->
+          </div>
+        </div>
+
+        <!-- Vergelijkbare pakketten -->
+        <div style="margin-top:3rem">
+          <h3 style="margin-bottom:1.25rem">Vergelijkbare pakketten</h3>
+          <div class="pakketten-grid" id="related-grid" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr))">
+            <!-- Dynamisch via JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="detail-sidebar">
+        <div class="koop-box">
+          <div class="koop-prijs" id="detail-prijs">€9,99</div>
+          <div class="koop-sub">per les — eenmalige betaling</div>
+          <hr class="koop-divider">
+          <div class="koop-features">
+            <div class="koop-feature"><span class="koop-feature-icon">📥</span> Direct downloadbaar</div>
+            <div class="koop-feature"><span class="koop-feature-icon">📄</span> PDF + Word-versie</div>
+            <div class="koop-feature"><span class="koop-feature-icon">🖨️</span> Print & digitaal gebruik</div>
+            <div class="koop-feature"><span class="koop-feature-icon">♾️</span> Levenslange toegang</div>
+            <div class="koop-feature"><span class="koop-feature-icon">📋</span> Docentenhandleiding</div>
+          </div>
+          <div class="koop-btns">
+            <button class="btn btn-primary btn-lg btn-koop">Koop deze les — €9,99</button>
+            <a href="registratie.html" class="btn btn-outline">Of probeer gratis →</a>
+          </div>
+          <div class="payment-methods">
+            <p>Veilig betalen met</p>
+            <div class="payment-methods-icons">
+              <span class="pm-icon">iDEAL</span>
+              <span class="pm-icon">PayPal</span>
+              <span class="pm-icon">VISA</span>
+              <span class="pm-icon">Mastercard</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Abonnement tip -->
+        <div style="margin-top:1.25rem;padding:1.25rem;background:var(--warm-50);border:1px solid var(--warm-200);border-radius:var(--radius-lg)">
+          <p style="font-size:.85rem;color:#57534E;margin-bottom:.75rem">
+            <strong style="color:var(--primary)">Tip:</strong> Met een maandabonnement heb je onbeperkt toegang tot alle pakketten voor €14,99/maand.
+          </p>
+          <a href="prijzen.html" style="font-size:.85rem;color:var(--primary);font-weight:600">Bekijk abonnementen →</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><span class="logo-dot"></span>LesHub</a>
+        <p>Kwalitatieve, kant-en-klare lespakketten Nederlands voor docenten in het voortgezet onderwijs en MBO.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="pakketten.html">Pakketten</a></li>
+          <li><a href="prijzen.html">Prijzen</a></li>
+          <li><a href="workshops.html">Workshops</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Ondersteuning</h4>
+        <ul>
+          <li><a href="#">Veelgestelde vragen</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Meer</h4>
+        <ul>
+          <li><a href="over-mij.html">Over mij</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 LesHub.nl</span>
+      <div style="display:flex;gap:1.25rem"><a href="#">Privacybeleid</a><a href="#">Voorwaarden</a></div>
+      <div class="payment-icons">
+        <span class="payment-icon">iDEAL</span>
+        <span class="payment-icon">PayPal</span>
+        <span class="payment-icon">VISA</span>
+        <span class="payment-icon">MC</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/i18n.js"></script>
+<script>
+// Extra detail page logic: related packages & "geschikt voor" chips
+document.addEventListener('DOMContentLoaded', () => {
+  const params  = new URLSearchParams(window.location.search);
+  const id      = params.get('id');
+  const pakket  = PAKKETTEN.find(p => p.id === id) || PAKKETTEN[0];
+
+  // Geschikt voor
+  const geschiktEl = document.getElementById('detail-geschikt');
+  if (geschiktEl) {
+    const chips = [
+      `${pakket.niveau} Jaar ${pakket.leerjaar}`,
+      pakket.thema,
+      'Docenten Nederlands',
+      'Taalonderwijs VO',
+    ];
+    geschiktEl.innerHTML = chips.map(c =>
+      `<span class="tag tag-thema" style="font-size:.82rem">${c}</span>`
+    ).join('');
+  }
+
+  // Related: same niveau, different id
+  const relatedEl = document.getElementById('related-grid');
+  if (relatedEl) {
+    const related = PAKKETTEN.filter(p => p.id !== pakket.id && p.niveau === pakket.niveau).slice(0, 2);
+    if (related.length === 0) {
+      relatedEl.innerHTML = PAKKETTEN.filter(p => p.id !== pakket.id).slice(0, 2)
+        .map(p => pakketCardHTML(p)).join('');
+    } else {
+      relatedEl.innerHTML = related.map(p => pakketCardHTML(p)).join('');
+    }
+  }
+});
+</script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>

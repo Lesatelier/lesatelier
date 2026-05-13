@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///C:/Leshub/app/lespakketten/page.tsx"],"sourcesContent":["export default function LespakkettenPage() {\n  return (\n    <div className=\"flex min-h-[60vh] flex-col items-center justify-center gap-3 px-4 text-center\">\n      <div className=\"flex h-14 w-14 items-center justify-center rounded-2xl bg-[#1B2A6B] text-2xl text-white\">\n        📚\n      </div>\n      <h1 className=\"text-2xl font-bold text-[#1B2A6B]\">Lespakketten</h1>\n      <p className=\"text-sm text-gray-500\">Komt binnenkort</p>\n    </div>\n  );\n}\n"],"names":["LespakkettenPage","className"],"mappings":";;;;;;AAAe,SAASA;IACtB,qBACE,8OAAC;QAAIC,WAAU;;0BACb,8OAAC;gBAAIA,WAAU;0BAA0F;;;;;;0BAGzG,8OAAC;gBAAGA,WAAU;0BAAoC;;;;;;0BAClD,8OAAC;gBAAEA,WAAU;0BAAwB;;;;;;;;;;;;AAG3C"}}]
+}
